@@ -1,0 +1,12 @@
+[package]
+name = "mixed-stack-tracer"
+version = "0.1.0"
+edition = "2021"
+authors = ["yangrudan"]
+description = "Prototype: merge native(C/C++) and Python stacks (merge algorithm + tests)"
+license = "MIT"
+repository = "https://github.com/yangrudan/mixed-stack-tracer"
+
+[dependencies]
+
+[dev-dependencies]
