@@ -5,3 +5,10 @@ Cargo.lock
 .idea
 .vscode
 .DS_Store
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+dist/
+build/

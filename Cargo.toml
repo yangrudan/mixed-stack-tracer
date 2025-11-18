@@ -7,6 +7,17 @@ description = "Prototype: merge native(C/C++) and Python stacks (merge algorithm
 license = "MIT"
 repository = "https://github.com/yangrudan/mixed-stack-tracer"
 
+[lib]
+name = "mixed_stack_tracer"
+crate-type = ["rlib", "cdylib"]
+
+[features]
+default = []
+python = ["pyo3/extension-module"]
+
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+pyo3 = { version = "0.20", optional = true }
 
 [dev-dependencies]
