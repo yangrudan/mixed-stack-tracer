@@ -18,7 +18,7 @@ impl SignalTracer {
     /// - On native frame: push native frame
     /// - After traversal, append any remaining python frames to merged
     pub fn merge_python_native_stacks(
-        mut python_stacks: Vec<CallFrame>,
+        python_stacks: Vec<CallFrame>,
         native_stacks: Vec<CallFrame>,
     ) -> Vec<CallFrame> {
         let mut merged = Vec::with_capacity(native_stacks.len() + python_stacks.len());
@@ -91,10 +91,10 @@ mod tests {
 
     fn pyframe(name: &str) -> CallFrame {
         CallFrame::PyFrame {
-            ip: "0x0".to_string(),
             file: "".to_string(),
             func: name.to_string(),
             lineno: 0,
+            locals: Default::default(),
         }
     }
 
