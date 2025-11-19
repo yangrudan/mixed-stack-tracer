@@ -1,4 +1,3 @@
-```markdown
 # mixed-stack-tracer
 
 Prototype repository for merging native (C/C++) and Python call stacks.
@@ -147,5 +146,3 @@ The project includes GitHub Actions workflows that:
 ## License
 
 MIT
-
-```
